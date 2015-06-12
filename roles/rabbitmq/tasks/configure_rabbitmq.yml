@@ -1,0 +1,8 @@
+---
+# configure rabbitmq service
+-name: rabbitmq add new user
+  command: rabbitmqctl add_user {{ rabbitmq_user }} {{ rabbitmq_pass }}
+
+-name: rabbitmq set user permission
+  command: rabbitmqctl set_permissions {{ rabbitmq_user }} ".*" ".*" ".*"
+  notify: restart rabbitmq

@@ -1,0 +1,4 @@
+---
+# upgrade dist
+-name: apt upgrade dist
+  apt: upgrade=dist

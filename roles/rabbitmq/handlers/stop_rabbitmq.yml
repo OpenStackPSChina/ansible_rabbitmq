@@ -1,4 +1,4 @@
 ---
 # stop rabbitmq service
 - name: stop rabbitmq
-  service: name=rabbitmq state=stopped
+  service: name=rabbitmq-server state=stopped
