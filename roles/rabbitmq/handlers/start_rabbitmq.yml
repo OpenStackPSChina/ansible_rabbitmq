@@ -1,0 +1,4 @@
+---
+# start rabbitmq service
+- name: start rabbitmq
+  service: name=rabbitmq state=started

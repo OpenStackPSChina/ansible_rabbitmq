@@ -1,0 +1,6 @@
+---
+# playbook for ansible_rabbitmq
+- hosts: openstack_controller
+  roles:
+    - common
+    - rabbitmq
