@@ -1,11 +1,11 @@
 ---
 # install rabbitmq service
--name: install rabbitmq
- apt: name=rabbitmq-server update_cache=yes state=present
+- name: install rabbitmq
+  apt: name=rabbitmq-server update_cache=yes state=present
 # add new user to rabbitmq server
--name: rabbitmq add new user
+- name: rabbitmq add new user
   command: rabbitmqctl add_user {{ rabbitmq_user }} {{ rabbitmq_pass }}
 # set user permission to rabbitmq server
--name: rabbitmq set user permission
+- name: rabbitmq set user permission
   command: rabbitmqctl set_permissions {{ rabbitmq_user }} ".*" ".*" ".*"
   notify: restart rabbitmq

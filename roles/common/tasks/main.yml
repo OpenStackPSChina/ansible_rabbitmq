@@ -1,7 +1,7 @@
 ---
 # update cache
--name: apt update cache
+- name: apt update cache
   apt: update_cache=yes
 # upgrade dist
--name: apt upgrade dist
+- name: apt upgrade dist
   apt: upgrade=dist
