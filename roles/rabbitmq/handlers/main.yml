@@ -1,0 +1,13 @@
+---
+# restart rabbitmq service
+- name: restart rabbitmq
+  service: name=rabbitmq-server state=restarted
+# start rabbitmq service
+- name: start rabbitmq
+  service: name=rabbitmq-server state=started
+# stop rabbitmq service
+- name: stop rabbitmq
+  service: name=rabbitmq-server state=stopped
+# set rabbitmq upstart
+- name: upstart rabbitmq
+  service: name=rabbitmq-server enabled=yes

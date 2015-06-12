@@ -1,4 +1,0 @@
----
-# restart rabbitmq service
-- name: restart rabbitmq
-  service: name=rabbitmq-server state=restarted

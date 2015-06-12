@@ -1,4 +1,0 @@
----
-# set rabbitmq upstart
-- name: upstart rabbitmq
-  service: name=rabbitmq-server enabled=yes
